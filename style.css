@@ -336,6 +336,8 @@ section {
 
 #experience {
   position: relative;
+  height: auto;
+  margin: 30px;
 }
 
 .experience-sub-title {
