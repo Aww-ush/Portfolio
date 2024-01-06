@@ -175,12 +175,25 @@ section {
   width: 400px;
   margin: auto 0;
 }
-.main_img img{
+
+.section__pic-container-main {
+  height: 275px;
+  width: 275px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  /* Ensures the container remains circular */
+}
+
+.main_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
 }
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -435,6 +448,7 @@ footer {
 footer p {
   text-align: center;
 }
+
 .hexa {
   border: 0px;
   float: left;
@@ -735,6 +749,7 @@ footer p {
     text-align: left;
   }
 }
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -862,6 +877,7 @@ footer p {
     text-align: justify;
   }
 }
+
 .project-img {
   /* Set fixed dimensions to create a square */
   width: 200px;
@@ -871,8 +887,9 @@ footer p {
   object-fit: cover;
   border-radius: 2rem;
 }
+
 /* Adjust the contact section */
-#work,#contact {
+#contact {
   /* Set a minimum height to prevent overlapping */
   min-height: 60vh;
 }
@@ -885,7 +902,10 @@ footer p {
   }
 }
 
-
+    #work{
+      height: auto;
+      
+    }
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
 
