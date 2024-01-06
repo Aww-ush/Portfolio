@@ -872,7 +872,7 @@ footer p {
   border-radius: 2rem;
 }
 /* Adjust the contact section */
-#contact {
+#work,#contact {
   /* Set a minimum height to prevent overlapping */
   min-height: 60vh;
 }
@@ -882,5 +882,16 @@ footer p {
   #contact {
     /* Adjust height for smaller screens */
     min-height: 30vh;
+  }
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+
+  #work,
+  #contact {
+    height: auto;
+    /* Set height to auto for smaller screens */
   }
 }
